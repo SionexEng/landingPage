@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Sionex Engenharia e Soluções - Construindo soluções com inovação e excelência. Engenharia civil, reformas, construção e soluções corporativas em São Paulo.">
+<meta name="keywords" content="engenharia, construção civil, reformas, soluções corporativas, Sionex, São Paulo">
+<title>Sionex Engenharia e Soluções</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NOTIFICATION -->
+<div id="notification">
+  <p id="notification-text" class="text-sm" style="color:#D1D5DB"></p>
+</div>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/5511920468265?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." 
+   class="whatsapp-float" target="_blank" aria-label="WhatsApp Sionex">
+  <div class="wa-pulse"></div>
+  <svg width="28" height="28" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ========================
+     HEADER
+========================= -->
+<header id="header">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <a href="#inicio" class="site-logo-link flex items-center gap-3 group" aria-label="Sionex - página inicial">
+      <img src="assets/img/logo.png" alt="Sionex" class="site-logo object-contain transition-transform duration-300 group-hover:scale-105">
+      
+    </a>
+
+    <nav class="desktop-nav flex items-center gap-8">
+      <a href="#inicio" class="nav-link">Início</a>
+      <a href="#sobre" class="nav-link">Sobre</a>
+      <a href="#servicos" class="nav-link">Serviços</a>
+      <a href="#projetos" class="nav-link">Projetos</a>
+      <a href="#clientes" class="nav-link">Clientes</a>
+      <a href="#contato" class="nav-link">Contato</a>
+    </nav>
+
+    <div class="header-actions flex items-center gap-3">
+      <a href="#orcamento" class="btn-primary desktop-header-link hidden md:inline-block">Solicitar Orçamento</a>
+      <button class="hamburger md:hidden" id="hamburger-btn" type="button" aria-label="Abrir menu de navegação" aria-controls="mobile-menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="mobile-menu" class="px-6" aria-hidden="true">
+    <nav class="flex flex-col gap-4">
+      <a href="#inicio" class="nav-link py-2 border-b" style="border-color:rgba(255,255,255,0.05)">Início</a>
+      <a href="#sobre" class="nav-link py-2 border-b" style="border-color:rgba(255,255,255,0.05)">Sobre</a>
+      <a href="#servicos" class="nav-link py-2 border-b" style="border-color:rgba(255,255,255,0.05)">Serviços</a>
+      <a href="#projetos" class="nav-link py-2 border-b" style="border-color:rgba(255,255,255,0.05)">Projetos</a>
+      <a href="#clientes" class="nav-link py-2 border-b" style="border-color:rgba(255,255,255,0.05)">Clientes</a>
+      <a href="#contato" class="nav-link py-2">Contato</a>
+      <a href="#orcamento" class="btn-primary text-center mt-2">Solicitar Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ========================
+     HERO
+========================= -->
+<section id="inicio" style="padding:0">
+<div id="hero">
+  <!-- SLIDES - premium construction / architecture imagery -->
+  <div class="hero-slide active" 
+    style="background-image:url('assets/img/image-01.jpg')">
+  </div>
+  <div class="hero-slide" 
+    style="background-image:url('assets/img/image-02.jpg')">
+  </div>
+  <div class="hero-slide" 
+    style="background-image:url('assets/img/image-03.jpg')">
+  </div>
+  <div class="hero-slide" 
+    style="background-image:url('assets/img/image-04.jpg')">
+  </div>
+  <div class="hero-slide" 
+    style="background-image:url('assets/img/image-05.jpg')">
+  </div>
+
+  <div class="hero-overlay"></div>
+  <div class="hero-overlay2"></div>
+  <div class="grid-deco" style="opacity:0.5"></div>
+
+  <div class="hero-content max-w-7xl mx-auto px-6 w-full">
+    <div class="max-w-2xl">
+      <<div class="hero-eyebrow">Engenharia &amp; Soluções</div>>
+      <h1 class="hero-title mb-6">
+        Construindo<br>
+        soluções com<br>
+        <span class="accent">inovação</span> e<br>
+        excelência
+      </h1>
+      <p class="hero-subtitle mb-10">
+        Da concepção à entrega, transformamos projetos em obras de alto padrão com precisão técnica, tecnologia de ponta e comprometimento total.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <a href="https://wa.me/5511920468265?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+           target="_blank"
+           style="background:linear-gradient(135deg,#25D366,#128C7E);color:white;padding:14px 30px;border-radius:2px;font-family:'Exo 2',sans-serif;font-weight:700;font-size:0.88rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:all 0.3s;box-shadow:0 4px 20px rgba(37,211,102,0.3)"
+           onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 32px rgba(37,211,102,0.45)'"
+           onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(37,211,102,0.3)'">
+          <svg width="18" height="18" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Falar no WhatsApp
+        </a>
+        <a href="#orcamento" class="btn-primary" style="padding:14px 30px;font-size:0.88rem">
+          Solicitar Orçamento
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-dots">
+    <div class="hero-dot active" onclick="goToSlide(0)"></div>
+    <div class="hero-dot" onclick="goToSlide(1)"></div>
+    <div class="hero-dot" onclick="goToSlide(2)"></div>
+    <div class="hero-dot" onclick="goToSlide(3)"></div>
+    <div class="hero-dot" onclick="goToSlide(4)"></div>
+  </div>
+  <div class="scroll-cue">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</div>
+</section>
+
+<!-- ========================
+     SOBRE
+========================= -->
+<section id="sobre">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+      <!-- Left: text -->
+      <div class="reveal-left">
+        <div class="section-tag">Sobre a Sionex</div>
+        <h2 class="section-title mb-6">
+          Excelência em engenharia<br>
+          <span class="accent-blue">com alma inovadora</span>
+        </h2>
+        <p style="color:rgba(192,200,216,0.7);line-height:1.85;margin-bottom:18px">
+          A <strong style="color:#fff">Sionex Engenharia e Soluções</strong> foi fundada com um propósito inequívoco: entregar projetos de alto padrão com rigor técnico, inovação contínua e comprometimento integral com cada cliente.
+        </p>
+        <p style="color:rgba(192,200,216,0.65);line-height:1.85;margin-bottom:32px">
+          Atuamos em engenharia civil, reformas corporativas, construção e gerenciamento de obras — combinando as melhores tecnologias do setor com uma equipe altamente especializada, baseados em São Paulo.
+        </p>
+        <div class="flex gap-4 flex-wrap">
+          <a href="#orcamento" class="btn-primary">Solicitar orçamento</a>
+          <a href="#servicos" class="btn-outline">Ver serviços</a>
+        </div>
+      </div>
+
+      <!-- Right: image + cards -->
+      <div class="reveal-right">
+        <!-- Feature image -->
+        <div style="position:relative;border-radius:4px;overflow:hidden;margin-bottom:16px;height:240px">
+          <img src="assets/img/image-06.jpg" 
+               alt="Engenharia civil moderna" 
+               style="width:100%;height:100%;object-fit:cover;display:block">
+          <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(13,27,42,0.4),transparent)"></div>
+          <div style="position:absolute;bottom:16px;left:16px;font-family:'Exo 2',sans-serif;font-weight:700;font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;background:rgba(30,58,138,0.7);border:1px solid rgba(59,130,246,0.4);color:#93C5FD;padding:5px 14px;border-radius:2px">Alto Padrão</div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="about-card">
+            <div class="icon-box">
+              <svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+            </div>
+            <h3 style="font-family:'Exo 2',sans-serif;font-weight:700;font-size:1rem;margin-bottom:6px">Confiança</h3>
+            <p style="color:rgba(192,200,216,0.55);font-size:0.82rem;line-height:1.6">Transparência total em cada etapa.</p>
+          </div>
+          <div class="about-card">
+            <div class="icon-box">
+              <svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+            </div>
+            <h3 style="font-family:'Exo 2',sans-serif;font-weight:700;font-size:1rem;margin-bottom:6px">Eficiência</h3>
+            <p style="color:rgba(192,200,216,0.55);font-size:0.82rem;line-height:1.6">Entrega no prazo, dentro do orçamento.</p>
+          </div>
+          <div class="about-card">
+            <div class="icon-box">
+              <svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75L2.25 12l4.179 2.25m0-4.5l5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0l4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0l-5.571 3-5.571-3"/></svg>
+            </div>
+            <h3 style="font-family:'Exo 2',sans-serif;font-weight:700;font-size:1rem;margin-bottom:6px">Precisão</h3>
+            <p style="color:rgba(192,200,216,0.55);font-size:0.82rem;line-height:1.6">Execução técnica impecável.</p>
+          </div>
+          <div class="about-card">
+            <div class="icon-box">
+              <svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"/></svg>
+            </div>
+            <h3 style="font-family:'Exo 2',sans-serif;font-weight:700;font-size:1rem;margin-bottom:6px">Parceria</h3>
+            <p style="color:rgba(192,200,216,0.55);font-size:0.82rem;line-height:1.6">Relacionamento sólido e duradouro.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================
+     SERVIÇOS
+========================= -->
+<section id="servicos">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-16 reveal">
+      <div class="section-tag" style="justify-content:center">Nossos Serviços</div>
+      <h2 class="section-title">Soluções completas para<br><span class="accent-blue">cada projeto</span></h2>
+      <p style="color:rgba(192,200,216,0.6);max-width:500px;margin:14px auto;line-height:1.75">
+        Portfólio completo de serviços de engenharia para o mercado corporativo, comercial e residencial.
+      </p>
+    </div>
+
+    <!-- Image strip -->
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:40px;border-radius:4px;overflow:hidden" class="reveal">
+      <div style="position:relative;height:180px;overflow:hidden">
+        <img src="assets/img/image-07.jpg" alt="Construção" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform=''">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,15,24,0.7),transparent)"></div>
+        <div style="position:absolute;bottom:12px;left:14px;font-family:'Exo 2',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(192,200,216,0.9)">Construção</div>
+      </div>
+      <div style="position:relative;height:180px;overflow:hidden">
+        <img src="assets/img/image-08.jpg" alt="Corporativo" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform=''">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,15,24,0.7),transparent)"></div>
+        <div style="position:absolute;bottom:12px;left:14px;font-family:'Exo 2',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(192,200,216,0.9)">Corporativo</div>
+      </div>
+      <div style="position:relative;height:180px;overflow:hidden">
+        <img src="assets/img/image-09.jpg" alt="Engenharia" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform 0.6s" onmouseover="this.style.transform='scale(1.06)'" onmouseout="this.style.transform=''">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(6,15,24,0.7),transparent)"></div>
+        <div style="position:absolute;bottom:12px;left:14px;font-family:'Exo 2',sans-serif;font-size:0.75rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:rgba(192,200,216,0.9)">Engenharia</div>
+      </div>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div class="service-card reveal" style="transition-delay:.04s">
+        <div class="service-num">01</div>
+        <div class="icon-box mb-5"><svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z"/></svg></div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:10px">Engenharia Civil</h3>
+        <p style="color:rgba(192,200,216,0.6);font-size:0.88rem;line-height:1.7">Projetos estruturais e execução de obras civis com equipe altamente especializada e rigor técnico.</p>
+      </div>
+      <div class="service-card reveal" style="transition-delay:.08s">
+        <div class="service-num">02</div>
+        <div class="icon-box mb-5"><svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17L17.25 21A2.652 2.652 0 0021 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 11-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 004.486-6.336l-3.276 3.277a3.004 3.004 0 01-2.25-2.25l3.276-3.276a4.5 4.5 0 00-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437l1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008z"/></svg></div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:10px">Reformas</h3>
+        <p style="color:rgba(192,200,216,0.6);font-size:0.88rem;line-height:1.7">Reformas residenciais e comerciais com acabamento premium, respeitando prazos e orçamentos.</p>
+      </div>
+      <div class="service-card reveal" style="transition-delay:.12s">
+        <div class="service-num">03</div>
+        <div class="icon-box mb-5"><svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:10px">Construção</h3>
+        <p style="color:rgba(192,200,216,0.6);font-size:0.88rem;line-height:1.7">Construção de edifícios, galpões e empreendimentos com tecnologia construtiva de última geração.</p>
+      </div>
+      <div class="service-card reveal" style="transition-delay:.16s">
+        <div class="service-num">04</div>
+        <div class="icon-box mb-5"><svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25z"/></svg></div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:10px">Gerenciamento de Obras</h3>
+        <p style="color:rgba(192,200,216,0.6);font-size:0.88rem;line-height:1.7">Coordenação completa com controle de qualidade, cronograma e custos em tempo real.</p>
+      </div>
+      <div class="service-card reveal" style="transition-delay:.20s">
+        <div class="service-num">05</div>
+        <div class="icon-box mb-5"><svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.7 21H3.3A1.2 1.2 0 012.1 19.8V4.2A1.2 1.2 0 013.3 3h10.2l7.2 7.2v9.6a1.2 1.2 0 01-1 1.2z"/></svg></div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:10px">Soluções Corporativas</h3>
+        <p style="color:rgba(192,200,216,0.6);font-size:0.88rem;line-height:1.7">Projetos sob medida para empresas que buscam modernização, expansão ou otimização de espaços.</p>
+      </div>
+      <div class="service-card reveal" style="transition-delay:.24s">
+        <div class="service-num">06</div>
+        <div class="icon-box mb-5"><svg width="20" height="20" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75a4.5 4.5 0 01-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 11-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 016.336-4.486l-3.276 3.276a3.004 3.004 0 002.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852z"/></svg></div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.15rem;margin-bottom:10px">Manutenção Predial</h3>
+        <p style="color:rgba(192,200,216,0.6);font-size:0.88rem;line-height:1.7">Manutenção preventiva e corretiva para preservar a integridade e valor patrimonial das edificações.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================
+     PROJETOS
+========================= -->
+<section id="projetos">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-8 mb-12">
+      <div class="reveal-left">
+        <div class="section-tag">Portfólio</div>
+        <h2 class="section-title">Projetos <span class="accent-blue">realizados</span></h2>
+        <p style="color:rgba(192,200,216,0.6);max-width:420px;line-height:1.75;margin-top:12px">
+          Cada obra carrega o compromisso da Sionex com qualidade, prazo e excelência técnica.
+        </p>
+      </div>
+      <!-- Filter buttons -->
+      <div class="flex flex-wrap gap-3 reveal-right">
+        <button class="filter-btn active" data-filter="all" onclick="filterProjects('all',this)">Todos</button>
+        <button class="filter-btn" data-filter="comercial" onclick="filterProjects('comercial',this)">Comercial</button>
+        <button class="filter-btn" data-filter="residencial" onclick="filterProjects('residencial',this)">Residencial</button>
+        <button class="filter-btn" data-filter="varejo" onclick="filterProjects('varejo',this)">Varejo</button>
+      </div>
+    </div>
+
+    <div class="project-grid" id="project-grid">
+
+      <!-- COMERCIAL -->
+      <div class="project-card reveal" data-cat="comercial" data-featured="true">
+        <img src="assets/img/image-10.jpg" alt="Escritório Corporativo" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Comercial</div>
+          <div class="project-title">Escritório Corporativo Premium</div>
+          <div class="project-sub">Reforma completa · 1.200m²</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal hidden" data-cat="comercial" style="transition-delay:.06s">
+        <img src="assets/img/image-11.jpg" alt="Edifício comercial moderno" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Comercial</div>
+          <div class="project-title">Edifício Comercial Moderno</div>
+          <div class="project-sub">Adequação técnica · 2.400m²</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal hidden" data-cat="comercial" style="transition-delay:.12s">
+        <img src="assets/img/image-12.jpg" alt="Projeto comercial corporativo" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Comercial</div>
+          <div class="project-title">Centro Empresarial</div>
+          <div class="project-sub">Obra corporativa · 3.400m²</div>
+        </div>
+      </div>
+
+      <!-- RESIDENCIAL -->
+      <div class="project-card reveal" data-cat="residencial" data-featured="true">
+        <img src="assets/img/image-13.jpg" alt="Casa Moderna" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Residencial</div>
+          <div class="project-title">Residência Alto Padrão</div>
+          <div class="project-sub">Construção · 480m²</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal hidden" data-cat="residencial" style="transition-delay:.06s">
+        <img src="assets/img/image-14.jpg" alt="Apartamento Luxo" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Residencial</div>
+          <div class="project-title">Apartamento Luxo</div>
+          <div class="project-sub">Reforma completa · 320m²</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal hidden" data-cat="residencial" style="transition-delay:.12s">
+        <img src="assets/img/image-15.jpg" alt="Villa Moderna" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Residencial</div>
+          <div class="project-title">Villa Contemporânea</div>
+          <div class="project-sub">Construção · 650m²</div>
+        </div>
+      </div>
+
+      <!-- VAREJO -->
+      <div class="project-card reveal" data-cat="varejo" data-featured="true">
+        <img src="assets/img/image-16.jpg" alt="Loja Premium" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Varejo</div>
+          <div class="project-title">Loja Flagship Premium</div>
+          <div class="project-sub">Reforma + fitout · 280m²</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal hidden" data-cat="varejo" style="transition-delay:.06s">
+        <img src="assets/img/image-17.jpg" alt="Shopping Interior" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Varejo</div>
+          <div class="project-title">Expansão Shopping Center</div>
+          <div class="project-sub">Construção · 5 lojas</div>
+        </div>
+      </div>
+
+      <div class="project-card reveal hidden" data-cat="varejo" style="transition-delay:.12s">
+        <img src="assets/img/smartfit.jpg" alt="Smart Fit" loading="lazy">
+        <div class="project-overlay"></div>
+        <div class="project-info">
+          <div class="project-tag-badge">Varejo</div>
+          <div class="project-title">Smart Fit</div>
+          <div class="project-sub">Instalações hidráulicas · 600m²</div>
+        </div>
+      </div>
+
+    </div><!-- /project-grid -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================
+     DIFERENCIAIS (image bg)
+========================= -->
+<section id="diferenciais" style="position:relative;overflow:hidden">
+  <!-- Background image with overlay -->
+  <div style="position:absolute;inset:0;z-index:0">
+    <img src="assets/img/image-22.jpg" 
+         alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+    <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(6,15,24,0.93) 0%,rgba(13,27,42,0.87) 60%,rgba(6,15,24,0.93) 100%)"></div>
+  </div>
+  <div class="max-w-7xl mx-auto px-6" style="position:relative;z-index:1">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal-left">
+        <div class="section-tag">Nossos Diferenciais</div>
+        <h2 class="section-title mb-6">Por que escolher<br><span class="accent-blue">a Sionex?</span></h2>
+        <p style="color:rgba(192,200,216,0.65);line-height:1.85;margin-bottom:32px">
+          Combinamos tecnologia de ponta, equipe especializada e processos rigorosos para garantir a entrega do seu projeto com excelência absoluta.
+        </p>
+        <a href="#orcamento" class="btn-primary" style="padding:14px 32px">Começar meu projeto</a>
+      </div>
+      <div class="flex flex-col gap-4 reveal-right">
+        <div class="diff-card">
+          <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+          <div><h4 style="font-family:'Exo 2',sans-serif;font-weight:700;margin-bottom:4px">Qualidade Garantida</h4><p class="adaptive-copy">Normas ABNT e ISO seguidas rigorosamente em todos os projetos e execuções.</p></div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><h4 style="font-family:'Exo 2',sans-serif;font-weight:700;margin-bottom:4px">Entrega no Prazo</h4><p class="adaptive-copy">Cronogramas respeitados com controle preciso de cada etapa da obra.</p></div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg></div>
+          <div><h4 style="font-family:'Exo 2',sans-serif;font-weight:700;margin-bottom:4px">Segurança Total</h4><p class="adaptive-copy">Protocolos rígidos de segurança do trabalho em todas as frentes de obra.</p></div>
+        </div>
+        <div class="diff-card">
+          <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z"/></svg></div>
+          <div><h4 style="font-family:'Exo 2',sans-serif;font-weight:700;margin-bottom:4px">Tecnologia BIM</h4><p class="adaptive-copy">BIM, drones e softwares de última geração aplicados em todos os projetos.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================
+     CLIENTES
+========================= -->
+<section id="clientes">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center mb-14 reveal">
+      <div class="section-tag" style="justify-content:center">Portfólio de Clientes</div>
+      <h2 class="section-title">Clientes que <span class="accent-blue">confiam na Sionex</span></h2>
+      <p style="color:rgba(192,200,216,0.6);max-width:480px;margin:12px auto;line-height:1.75">
+        Empresas e marcas líderes que escolheram a Sionex para seus projetos de alto padrão.
+      </p>
+    </div>
+
+    <div class="clients-grid">
+      <div class="client-logo reveal"><img src="assets/img/client-01.webp" alt="Cliente Unatre 01" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-02.webp" alt="Cliente Unatre 02" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-03.webp" alt="Cliente Unatre 03" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-04.webp" alt="Cliente Unatre 04" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-05.webp" alt="Cliente Unatre 05" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-06.webp" alt="Cliente Unatre 06" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-07.webp" alt="Cliente Unatre 07" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-08.webp" alt="Cliente Unatre 08" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-09.webp" alt="Cliente Unatre 09" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-novaoca.png" alt="Novaoca" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-loria-kalansky.png" alt="Loria e Kalansky" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-gr-discovery.png" alt="GR Discovery" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-diol-salorsano.png" alt="Diol Salorsano" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-10.webp" alt="Cliente Unatre 10" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-11.webp" alt="Cliente Unatre 11" loading="lazy"></div>
+      <div class="client-logo reveal"><img src="assets/img/client-clinic.webp" alt="Clinic Cursos" loading="lazy"></div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================
+     FORMULÁRIO
+========================= -->
+<section id="orcamento">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal-left">
+        <div class="section-tag">Orçamento Gratuito</div>
+        <h2 class="section-title mb-6">
+          Solicite seu<br>
+          <span class="accent-blue">orçamento agora</span>
+        </h2>
+        <p style="color:rgba(192,200,216,0.65);line-height:1.85;margin-bottom:32px">
+          Nossa equipe técnica entrará em contato em até 24 horas com uma proposta personalizada para o seu projeto.
+        </p>
+        <div style="display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;align-items:center;gap:14px">
+            <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></div>
+            <div>
+              <div style="font-size:0.7rem;color:rgba(107,114,128,0.8);letter-spacing:0.12em;text-transform:uppercase;font-family:'Exo 2',sans-serif">Telefone</div>
+              <a href="tel:+5511920468265" style="font-family:'Exo 2',sans-serif;font-weight:700;color:rgb(96,165,250);text-decoration:none;transition:color 0.3s">(11) 92046-8265</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:14px">
+            <div class="diff-icon"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg></div>
+            <div>
+              <div style="font-size:0.7rem;color:rgba(107,114,128,0.8);letter-spacing:0.12em;text-transform:uppercase;font-family:'Exo 2',sans-serif">Email</div>
+              <a href="mailto:contato@sionex.com.br" style="font-family:'Exo 2',sans-serif;font-weight:700;color:rgb(96,165,250);text-decoration:none;transition:color 0.3s">contato@sionex.com.br</a>
+            </div>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:14px">
+            <div class="diff-icon" style="margin-top:2px"><svg width="18" height="18" fill="none" stroke="#3B82F6" stroke-width="1.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
+            <div>
+              <div style="font-size:0.7rem;color:rgba(107,114,128,0.8);letter-spacing:0.12em;text-transform:uppercase;font-family:'Exo 2',sans-serif">Endereço</div>
+              <div style="font-family:'Exo 2',sans-serif;font-weight:600;color:rgb(96,165,250);font-size:0.9rem;line-height:1.5">R. Mário de Andrade, 48<br>Barra Funda, São Paulo – SP<br>CEP 01154-060</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal-right">
+        <div class="glass-card p-8">
+          <form id="contact-form" novalidate>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+              <div>
+                <label class="form-label">Nome completo *</label>
+                <input type="text" id="f-nome" class="form-field" placeholder="Seu nome" required>
+              </div>
+              <div>
+                <label class="form-label">Email *</label>
+                <input type="email" id="f-email" class="form-field" placeholder="seu@email.com" required>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+              <div>
+                <label class="form-label">Telefone *</label>
+                <input type="tel" id="f-tel" class="form-field" placeholder="(11) 00000-0000" required>
+              </div>
+              <div>
+                <label class="form-label">Serviço desejado *</label>
+                <select id="f-servico" class="form-field" required>
+                  <option value="">Selecione...</option>
+                  <option>Engenharia Civil</option>
+                  <option>Reformas</option>
+                  <option>Construção</option>
+                  <option>Gerenciamento de Obras</option>
+                  <option>Soluções Corporativas</option>
+                  <option>Manutenção Predial</option>
+                </select>
+              </div>
+            </div>
+            <div style="margin-bottom:20px">
+              <label class="form-label">Mensagem</label>
+              <textarea id="f-msg" class="form-field" rows="4" placeholder="Descreva seu projeto ou necessidade (metragem, prazo, localização, etc.)..."></textarea>
+            </div>
+            <!-- Honeypot anti-spam: não deve ser preenchido por humanos -->
+            <input type="text" id="f-honey" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <button type="submit" id="submit-btn" class="btn-primary" style="width:100%;padding:15px;font-size:0.9rem;text-align:center">
+              <span id="btn-text">Solicitar Orçamento</span>
+              <span id="btn-loading" style="display:none">Enviando...</span>
+            </button>
+            <p style="font-size:0.72rem;text-align:center;margin-top:10px;color:rgba(107,114,128,0.55)">Resposta em até 24h · Sem compromisso · 100% gratuito</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ========================
+     CONTATO / REDES
+========================= -->
+<section id="contato">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:24px">
+      <div class="reveal-left">
+        <div class="section-tag">Fale Conosco</div>
+        <h3 style="font-family:'Exo 2',sans-serif;font-weight:800;font-size:1.8rem">Fale com nossa equipe</h3>
+        <p style="color:rgba(192,200,216,0.6);margin-top:8px">Prontos para atender você em São Paulo e região.</p>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px" class="reveal-right">
+        <a href="https://wa.me/5511920468265?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento." target="_blank" class="social-link" aria-label="WhatsApp">
+          <svg width="20" height="20" fill="#25D366" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+        <a href="https://instagram.com/sionex" target="_blank" class="social-link" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24"><defs><linearGradient id="ig2" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" style="stop-color:#f09433"/><stop offset="50%" style="stop-color:#dc2743"/><stop offset="100%" style="stop-color:#bc1888"/></linearGradient></defs><path fill="url(#ig2)" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/sionex" target="_blank" class="social-link" aria-label="LinkedIn">
+          <svg width="20" height="20" fill="#0A66C2" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://wa.me/5511920468265?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento."
+           target="_blank"
+           style="background:linear-gradient(135deg,#25D366,#128C7E);color:white;padding:12px 24px;border-radius:2px;font-family:'Exo 2',sans-serif;font-weight:700;font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:all 0.3s"
+           onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 10px 24px rgba(37,211,102,0.35)'"
+           onmouseout="this.style.transform='';this.style.boxShadow=''">
+          <svg width="16" height="16" fill="white" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Iniciar Conversa
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================
+     FOOTER
+========================= -->
+<footer>
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:40px;margin-bottom:48px" class="lg:grid-cols-3 grid-cols-1">
+      <!-- Brand -->
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:18px">
+          <img src="assets/img/logo.png" alt="Sionex" style="height:40px;width:40px;object-fit:contain">
+          <div>
+            <div style="font-family:'Exo 2',sans-serif;font-weight:900;font-size:1.2rem;line-height:1;letter-spacing:0.04em">
+              <span style="color:#C0C8D8">sion</span><span style="color:#2563EB">ex</span>
+            </div>
+            <div style="font-size:0.55rem;letter-spacing:0.22em;color:rgba(107,114,128,0.6);font-family:'Exo 2',sans-serif;font-weight:600;text-transform:uppercase">Engenharia e Soluções</div>
+          </div>
+        </div>
+        <p style="color:rgba(107,114,128,0.65);font-size:0.83rem;line-height:1.75;max-width:280px">
+          Construindo soluções com inovação e excelência. Engenharia civil de alto padrão em São Paulo.
+        </p>
+        <div style="display:flex;gap:8px;margin-top:20px">
+          <a href="https://wa.me/5511920468265" target="_blank" class="social-link" style="width:36px;height:36px" aria-label="WhatsApp">
+            <svg width="16" height="16" fill="#25D366" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+          <a href="https://instagram.com/sionex" target="_blank" class="social-link" style="width:36px;height:36px" aria-label="Instagram">
+            <svg width="16" height="16" viewBox="0 0 24 24"><path fill="#E1306C" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://linkedin.com/company/sionex" target="_blank" class="social-link" style="width:36px;height:36px" aria-label="LinkedIn">
+            <svg width="16" height="16" fill="#0A66C2" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <!-- Nav -->
+      <div>
+        <h4 style="font-family:'Exo 2',sans-serif;font-weight:700;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(107,114,128,0.7);margin-bottom:18px">Navegação</h4>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <a href="#inicio" class="nav-link" style="font-size:0.85rem">Início</a>
+          <a href="#sobre" class="nav-link" style="font-size:0.85rem">Sobre a Empresa</a>
+          <a href="#servicos" class="nav-link" style="font-size:0.85rem">Nossos Serviços</a>
+          <a href="#projetos" class="nav-link" style="font-size:0.85rem">Projetos</a>
+          <a href="#clientes" class="nav-link" style="font-size:0.85rem">Clientes</a>
+          <a href="#orcamento" class="nav-link" style="font-size:0.85rem">Solicitar Orçamento</a>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div>
+        <h4 style="font-family:'Exo 2',sans-serif;font-weight:700;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(107,114,128,0.7);margin-bottom:18px">Contato</h4>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <a href="tel:+5511920468265" style="color:rgba(192,200,216,0.65);font-size:0.85rem;text-decoration:none;transition:color 0.3s;display:flex;align-items:center;gap:8px"
+             onmouseover="this.style.color='#60A5FA'" onmouseout="this.style.color='rgba(192,200,216,0.65)'">
+            <span style="color:rgba(59,130,246,0.6)">📱</span> (11) 92046-8265
+          </a>
+          <a href="mailto:contato@sionex.com.br" style="color:rgba(192,200,216,0.65);font-size:0.85rem;text-decoration:none;transition:color 0.3s;display:flex;align-items:center;gap:8px"
+             onmouseover="this.style.color='#60A5FA'" onmouseout="this.style.color='rgba(192,200,216,0.65)'">
+            <span style="color:rgba(59,130,246,0.6)">✉️</span> contato@sionex.com.br
+          </a>
+          <div style="color:rgba(192,200,216,0.55);font-size:0.82rem;line-height:1.6;display:flex;align-items:flex-start;gap:8px">
+            <span style="color:rgba(59,130,246,0.6);flex-shrink:0">📍</span>
+            <span>R. Mário de Andrade, 48<br>Barra Funda, São Paulo – SP<br>CEP 01154-060</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="divider"></div>
+    <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:28px">
+      <p style="color:rgba(107,114,128,0.45);font-size:0.78rem">© 2024 Sionex Engenharia e Soluções. Todos os direitos reservados.</p>
+      <p style="color:rgba(107,114,128,0.35);font-size:0.72rem">Barra Funda · São Paulo – SP · CNPJ: 00.000.000/0001-00</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ========================
+     JAVASCRIPT
+========================= -->
+<script src="js/script.js"></script>
+</body>
+</html>

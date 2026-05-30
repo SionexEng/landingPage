@@ -16,8 +16,8 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'DM Sans',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden}
-h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
+body{font-family:'Orbitron','DM Sans',sans-serif;background:var(--navy);color:var(--white);overflow-x:hidden}
+h1,h2,h3,h4,.font-display{font-family:'Orbitron','Space Grotesk',sans-serif}
 
 /* ===========================
    HEADER
@@ -52,8 +52,8 @@ h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
 .nav-link{
   position:relative;color:rgba(192,200,216,0.8);
   text-decoration:none;font-size:0.82rem;
-  font-weight:500;letter-spacing:0.12em;text-transform:uppercase;
-  transition:color 0.3s;font-family:'Space Grotesk',sans-serif;
+  font-weight:700;letter-spacing:0.12em;text-transform:uppercase;
+  transition:color 0.3s;font-family:'Orbitron','Space Grotesk',sans-serif;
 }
 .nav-link::after{
   content:'';position:absolute;bottom:-5px;left:0;
@@ -65,7 +65,7 @@ h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
 .btn-primary{
   background:linear-gradient(135deg,#1E3A8A 0%,#2563EB 100%);
   color:white;padding:11px 26px;border-radius:2px;
-  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-weight:700;
   font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;
   border:none;cursor:pointer;text-decoration:none;display:inline-block;
   transition:all 0.3s;position:relative;overflow:hidden;
@@ -83,7 +83,7 @@ h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
   background:transparent;
   color:var(--blue-light);
   padding:11px 26px;border-radius:2px;
-  font-family:'Space Grotesk',sans-serif;font-weight:700;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-weight:700;
   font-size:0.82rem;letter-spacing:0.12em;text-transform:uppercase;
   border:1px solid rgba(59,130,246,0.35);
   cursor:pointer;text-decoration:none;display:inline-block;
@@ -120,13 +120,13 @@ h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
 }
 .hero-eyebrow{
   display:inline-flex;align-items:center;gap:10px;
-  font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:700;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-size:0.72rem;font-weight:700;
   letter-spacing:0.25em;text-transform:uppercase;
   color:var(--blue-light);margin-bottom:18px;
 }
 .hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--blue-light)}
 .hero-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:'Orbitron','Space Grotesk',sans-serif;
   font-size:clamp(3rem,6.5vw,5.5rem);
   font-weight:900;line-height:1.0;
   letter-spacing:-0.02em;color:#fff;
@@ -154,7 +154,7 @@ h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
   display:flex;flex-direction:column;align-items:center;gap:6px;
   opacity:0.5;
 }
-.scroll-cue span{font-family:'Space Grotesk',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase}
+.scroll-cue span{font-family:'Orbitron','Space Grotesk',sans-serif;font-size:0.65rem;letter-spacing:0.2em;text-transform:uppercase}
 .scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,0.6));animation:scrollCue 2s infinite}
 @keyframes scrollCue{0%,100%{transform:scaleY(0.3);opacity:0.3}50%{transform:scaleY(1);opacity:0.8}}
 
@@ -164,13 +164,13 @@ h1,h2,h3,h4,.font-display{font-family:'Space Grotesk',sans-serif}
 section{padding:100px 0}
 .section-tag{
   display:inline-flex;align-items:center;gap:10px;
-  font-family:'Space Grotesk',sans-serif;font-size:0.72rem;font-weight:700;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-size:0.72rem;font-weight:700;
   letter-spacing:0.22em;text-transform:uppercase;
   color:var(--blue-light);margin-bottom:14px;
 }
 .section-tag::before{content:'';display:block;width:22px;height:1px;background:var(--blue-light)}
 .section-title{
-  font-family:'Space Grotesk',sans-serif;
+  font-family:'Orbitron','Space Grotesk',sans-serif;
   font-size:clamp(2rem,3.8vw,3.2rem);
   font-weight:800;line-height:1.08;letter-spacing:-0.02em;
 }
@@ -232,7 +232,7 @@ section{padding:100px 0}
 }
 .service-card:hover::after{transform:scaleX(1)}
 .service-num{
-  font-family:'Space Grotesk',sans-serif;font-size:3.5rem;font-weight:900;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-size:3.5rem;font-weight:900;
   color:rgba(59,130,246,0.07);line-height:1;
   position:absolute;top:18px;right:18px;letter-spacing:-0.05em;
 }
@@ -242,7 +242,7 @@ section{padding:100px 0}
 =========================== */
 #projetos{background:var(--navy-deep);position:relative}
 .filter-btn{
-  font-family:'Space Grotesk',sans-serif;font-size:0.78rem;font-weight:700;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-size:0.78rem;font-weight:700;
   letter-spacing:0.15em;text-transform:uppercase;
   padding:9px 22px;border-radius:2px;cursor:pointer;
   border:1px solid rgba(255,255,255,0.1);
@@ -277,12 +277,12 @@ section{padding:100px 0}
 }
 .project-card:hover .project-info{transform:translateY(0)}
 .project-tag-badge{
-  display:inline-block;font-family:'Space Grotesk',sans-serif;font-size:0.65rem;
+  display:inline-block;font-family:'Orbitron','Space Grotesk',sans-serif;font-size:0.65rem;
   font-weight:700;letter-spacing:0.18em;text-transform:uppercase;
   background:rgba(59,130,246,0.3);border:1px solid rgba(59,130,246,0.4);
   color:var(--blue-light);padding:3px 10px;border-radius:2px;margin-bottom:8px;
 }
-.project-title{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1rem}
+.project-title{font-family:'Orbitron','Space Grotesk',sans-serif;font-weight:700;font-size:1rem}
 .project-sub{font-size:0.78rem;color:rgba(192,200,216,0.6);margin-top:3px}
 .project-card.hidden{display:none}
 .project-card.fade-in{animation:fadeInCard 0.4s ease forwards}
@@ -312,7 +312,7 @@ section{padding:100px 0}
   box-shadow:0 12px 32px rgba(0,0,0,0.25);
 }
 .client-name{
-  font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:0.9rem;
+  font-family:'Orbitron','Space Grotesk',sans-serif;font-weight:700;font-size:0.9rem;
   letter-spacing:0.08em;text-transform:uppercase;
   color:rgba(192,200,216,0.5);
   transition:color 0.3s;text-align:center;
@@ -346,7 +346,7 @@ section{padding:100px 0}
   background:rgba(255,255,255,0.04);
   border:1px solid rgba(255,255,255,0.09);
   border-radius:2px;padding:13px 17px;
-  color:#fff;font-family:'DM Sans',sans-serif;font-size:0.88rem;
+  color:#fff;font-family:'Orbitron','DM Sans',sans-serif;font-size:0.88rem;
   width:100%;outline:none;transition:all 0.3s;
 }
 .form-field::placeholder{color:rgba(255,255,255,0.28)}
@@ -360,7 +360,7 @@ select.form-field option{background:#0D1B2A}
   display:block;font-size:0.72rem;font-weight:600;
   letter-spacing:0.12em;text-transform:uppercase;
   color:rgba(255,255,255,0.45);margin-bottom:7px;
-  font-family:'Space Grotesk',sans-serif;
+  font-family:'Orbitron','Space Grotesk',sans-serif;
 }
 .glass-card{
   background:rgba(255,255,255,0.025);
@@ -391,7 +391,7 @@ footer{background:#04090f;border-top:1px solid rgba(30,58,138,0.2);padding:60px 
    WHATSAPP FLOAT
 =========================== */
 .whatsapp-float{
-  position:fixed;bottom:32px;left:32px;z-index:999;
+  position:fixed;bottom:32px;right:32px;z-index:999;
   width:58px;height:58px;border-radius:50%;
   background:linear-gradient(135deg,#25D366,#128C7E);
   display:flex;align-items:center;justify-content:center;

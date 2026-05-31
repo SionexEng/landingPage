@@ -446,8 +446,8 @@ footer{background:#04090f;border-top:1px solid rgba(30,58,138,0.2);padding:60px 
 .hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}
 .hamburger span{width:24px;height:2px;background:#fff;transition:all 0.3s;display:block}
 @media(max-width:1024px){
-  .site-logo{height:130px;max-width:228px}
-  #header.scrolled .site-logo{height:96px;max-width:170px}
+  .site-logo{height:140px;max-width:246px}
+  #header.scrolled .site-logo{height:140px;max-width:246px}
 }
 @media(max-width:768px){
   .hamburger{display:flex}
@@ -455,15 +455,15 @@ footer{background:#04090f;border-top:1px solid rgba(30,58,138,0.2);padding:60px 
   section{padding:70px 0}
   .scroll-cue{display:none}
   .project-grid{grid-template-columns:1fr 1fr}
-  .site-logo{height:110px;max-width:192px}
-  #header.scrolled .site-logo{height:82px;max-width:144px}
-  #header{padding:16px 0}
-  #header.scrolled{padding:6px 0}
+  .site-logo{height:120px;max-width:210px}
+  #header.scrolled .site-logo{height:120px;max-width:210px}
+  #header{padding:14px 0}
+  #header.scrolled{padding:8px 0}
 }
 @media(max-width:480px){
   .project-grid{grid-template-columns:1fr}
-  .site-logo{height:90px;max-width:158px}
-  #header.scrolled .site-logo{height:70px;max-width:124px}
+  .site-logo{height:100px;max-width:176px}
+  #header.scrolled .site-logo{height:100px;max-width:176px}
 }
 
 /* IMAGE BG SECTION */

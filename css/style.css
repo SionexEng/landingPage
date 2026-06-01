@@ -36,8 +36,8 @@ h1,h2,h3,h4,.font-display{font-family:'Orbitron','Space Grotesk',sans-serif}
 .site-logo{
   display:block;
   width:auto;
-  height:150px;
-  max-width:264px;
+  height:195px;
+  max-width:343px;
   object-fit:contain;
   filter:drop-shadow(0 8px 18px rgba(0,0,0,0.26));
   transition:height 0.4s cubic-bezier(0.4,0,0.2,1),max-width 0.4s cubic-bezier(0.4,0,0.2,1);
@@ -446,8 +446,8 @@ footer{background:#04090f;border-top:1px solid rgba(30,58,138,0.2);padding:60px 
 .hamburger{display:none;cursor:pointer;flex-direction:column;gap:5px}
 .hamburger span{width:24px;height:2px;background:#fff;transition:all 0.3s;display:block}
 @media(max-width:1024px){
-  .site-logo{height:140px;max-width:246px}
-  #header.scrolled .site-logo{height:140px;max-width:246px}
+  .site-logo{height:182px;max-width:320px}
+  #header.scrolled .site-logo{height:182px;max-width:320px}
 }
 @media(max-width:768px){
   .hamburger{display:flex}
@@ -455,15 +455,15 @@ footer{background:#04090f;border-top:1px solid rgba(30,58,138,0.2);padding:60px 
   section{padding:70px 0}
   .scroll-cue{display:none}
   .project-grid{grid-template-columns:1fr 1fr}
-  .site-logo{height:160px;max-width:280px}
-  #header.scrolled .site-logo{height:160px;max-width:280px}
+  .site-logo{height:208px;max-width:364px}
+  #header.scrolled .site-logo{height:208px;max-width:364px}
   #header{padding:14px 0}
   #header.scrolled{padding:8px 0}
 }
 @media(max-width:480px){
   .project-grid{grid-template-columns:1fr}
-  .site-logo{height:140px;max-width:245px}
-  #header.scrolled .site-logo{height:140px;max-width:245px}
+  .site-logo{height:182px;max-width:319px}
+  #header.scrolled .site-logo{height:182px;max-width:319px}
 }
 
 /* IMAGE BG SECTION */
@@ -731,9 +731,9 @@ select.form-field option{
     align-items:center;
   }
   #header img[alt="Sionex"]{
-    height:160px;
+    height:208px;
     width:auto;
-    max-width:280px;
+    max-width:364px;
   }
   .desktop-header-link{
     display:none!important;
@@ -781,7 +781,7 @@ select.form-field option{
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
   footer img[alt="Sionex"]{
-    height:140px;
+    height:182px;
     width:auto;
   }
 }

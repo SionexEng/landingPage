@@ -455,15 +455,15 @@ footer{background:#04090f;border-top:1px solid rgba(30,58,138,0.2);padding:60px 
   section{padding:70px 0}
   .scroll-cue{display:none}
   .project-grid{grid-template-columns:1fr 1fr}
-  .site-logo{height:120px;max-width:210px}
-  #header.scrolled .site-logo{height:120px;max-width:210px}
+  .site-logo{height:160px;max-width:280px}
+  #header.scrolled .site-logo{height:160px;max-width:280px}
   #header{padding:14px 0}
   #header.scrolled{padding:8px 0}
 }
 @media(max-width:480px){
   .project-grid{grid-template-columns:1fr}
-  .site-logo{height:100px;max-width:176px}
-  #header.scrolled .site-logo{height:100px;max-width:176px}
+  .site-logo{height:140px;max-width:245px}
+  #header.scrolled .site-logo{height:140px;max-width:245px}
 }
 
 /* IMAGE BG SECTION */
@@ -731,9 +731,9 @@ select.form-field option{
     align-items:center;
   }
   #header img[alt="Sionex"]{
-    height:48px;
+    height:160px;
     width:auto;
-    max-width:146px;
+    max-width:280px;
   }
   .desktop-header-link{
     display:none!important;
@@ -779,6 +779,10 @@ select.form-field option{
   }
   .clients-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+  footer img[alt="Sionex"]{
+    height:140px;
+    width:auto;
   }
 }
 
